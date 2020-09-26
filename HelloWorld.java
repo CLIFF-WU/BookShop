@@ -30,7 +30,7 @@ public class HelloWorld extends HttpServlet {
 		out.println("<HTML>");
 		out.println("<HEAD><TITLE>Hello World</TITLE></HEAD>");
 		out.println("<BODY>");
-		out.println("<BIG>Hello World , �@�ɧA�n !</BIG>="+(++count));
+		out.println("<BIG>Hello World ,  !</BIG>="+(++count));
 		out.println("</BODY></HTML>");
 	}
 }
