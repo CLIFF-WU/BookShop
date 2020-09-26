@@ -19,9 +19,7 @@ public class HelloWorld extends HttpServlet {
 
 		res.setContentType("text/html; charset=Big5");
 		PrintWriter out = res.getWriter();
-		
-		//以下三種方法以避免瀏覽器對文件的快取.
-		//雖第1.2種可只擇一使用, 但建議兩者都寫上, 其一當備用界線.
+
 		res.setHeader("Cache-Control", "no-store"); //HTTP1.1
 		res.setHeader("Pragma", "no-cache"); //HTTP 1.0
 		res.setDateHeader("Expires", 0);
@@ -32,7 +30,7 @@ public class HelloWorld extends HttpServlet {
 		out.println("<HTML>");
 		out.println("<HEAD><TITLE>Hello World</TITLE></HEAD>");
 		out.println("<BODY>");
-		out.println("<BIG>Hello World , 世界你好 !</BIG>="+(++count));
+		out.println("<BIG>Hello World , 嚙瑾嚙褕你嚙緯 !</BIG>="+(++count));
 		out.println("</BODY></HTML>");
 	}
 }
